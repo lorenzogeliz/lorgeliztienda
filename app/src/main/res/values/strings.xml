@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lor Geliz Tienda</string>
+    <string name="app_registro">Registro de usuario</string>
+    <string name="subtitulo">Por favor si desea restablecer su contraseña ingrese el <b>correo</b> que registro en su cuenta</string>
+</resources>

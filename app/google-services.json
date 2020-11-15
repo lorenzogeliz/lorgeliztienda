@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "453042173804",
+    "firebase_url": "https://lorgeliztienda.firebaseio.com",
+    "project_id": "lorgeliztienda",
+    "storage_bucket": "lorgeliztienda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453042173804:android:9cd0af43937da00922e549",
+        "android_client_info": {
+          "package_name": "com.example.lorgelistienda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453042173804-5or8ahgm3hnj4inrbm1htb8cfjt8u3gp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lorgelistienda",
+            "certificate_hash": "51e1a3b4a4325dcbdeaf4e53faa1743443391d6d"
+          }
+        },
+        {
+          "client_id": "453042173804-4nm66urjg0ja17u3gf7ekovfbe7nj5ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR1a158YoByG3q08xIAB5bOLkBddXkCDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453042173804-4nm66urjg0ja17u3gf7ekovfbe7nj5ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
