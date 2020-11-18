@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                     String iduser = task.getResult().getUser().getUid();
 
                    //getUserInfo();
-                    startActivity(new Intent(context,RegistroActivity.class));
+                    startActivity(new Intent(context,contentActivity.class));
                     dialog.dismiss();
                    // finish();
 
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //verifica si ya inicio secion para no volver a login
+   /* //verifica si ya inicio secion para no volver a login
     protected void onStart() {
 
         super.onStart();
@@ -138,6 +138,6 @@ public class MainActivity extends AppCompatActivity {
             //Toast.makeText(this, "No cerraste cesion la ultima ve...", Toast.LENGTH_LONG).show();
             startActivity(new Intent(context,RegistroActivity.class));
         }
-    }
+    }*/
 
 }

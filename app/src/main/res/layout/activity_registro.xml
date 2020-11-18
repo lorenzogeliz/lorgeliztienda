@@ -177,7 +177,7 @@
                     android:layout_gravity="center"
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
-                    app:srcCompat="@android:drawable/ic_secure" />
+                    android:src="@drawable/ic_candado"  />
 
                 <EditText
                     android:id="@+id/passwordUsuario"

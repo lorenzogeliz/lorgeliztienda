@@ -59,6 +59,7 @@ public class RegistroActivity extends AppCompatActivity {
         contraseña = findViewById(R.id.passwordUsuario);
         btnGuardar = findViewById(R.id.btnRegistrarusuario);
 
+
         irAtras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
