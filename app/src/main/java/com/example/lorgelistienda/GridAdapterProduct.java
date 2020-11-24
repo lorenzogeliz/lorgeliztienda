@@ -1,6 +1,7 @@
 package com.example.lorgelistienda;
 
 import android.content.Context;
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,19 +9,23 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.MemoryPolicy;
+import com.squareup.picasso.NetworkPolicy;
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 /**
  * {@link BaseAdapter} personalizado para el gridview
  */
-public class GridAdapterProductos extends BaseAdapter {
+public class GridAdapterProduct extends BaseAdapter {
 
     private Context contexto;
-    private ArrayList<GridViewImagen> vectorDatos;
+    private ArrayList<GridViewImagenProduct> vectorDatos;
     private TextView nombreGridView;
     private ImageView imageView;
 
-    public GridAdapterProductos(Context contexto, ArrayList<GridViewImagen> datos) {
+    public GridAdapterProduct(Context contexto, ArrayList<GridViewImagenProduct> datos) {
         //Se asignan los valores a los atributos de la clase AdaptadorGridView.
         this.contexto = contexto;
         this.vectorDatos = datos;
@@ -41,16 +46,28 @@ public class GridAdapterProductos extends BaseAdapter {
         return posicion;
     }
 
+
     @Override
     public View getView(int i, View convertView, ViewGroup viewGroup) {
         if (convertView == null) {
             LayoutInflater layout_inflater = (LayoutInflater) contexto.getSystemService(contexto.LAYOUT_INFLATER_SERVICE);
             convertView = layout_inflater.inflate(R.layout.gridview_card_productos, null);
         }
-        nombreGridView = (TextView) convertView.findViewById(R.id.informacion);
-        nombreGridView.setText(vectorDatos.get(i).getNameGridView());
         imageView=convertView.findViewById(R.id.imagenLogo);
-        imageView.setImageResource(vectorDatos.get(i).getImagenGridView());
+
+       /* Picasso.with(contexto)
+                .load(vectorDatos.get(i).getImagenGridView())
+                .placeholder(R.drawable.img1)
+                .fit()
+                .centerCrop().into(imageView);*/
+
+       // imageView.setImageResource(vectorDatos.get(i).getImagenGridView());
+
+        Picasso.get().load(vectorDatos.get(i).getImagenGridView())
+                .resize(100, 100)
+                .memoryPolicy(MemoryPolicy.NO_CACHE).networkPolicy(NetworkPolicy.NO_CACHE)
+                .error(contexto.getResources().getDrawable(R.drawable.img1))
+                .centerCrop().into(imageView);
 
         return convertView;
     }

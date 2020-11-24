@@ -21,16 +21,8 @@
             android:id="@+id/imagenLogo"
             android:layout_width="match_parent"
             android:layout_height="530dp"
-            android:src="@mipmap/ic_launcher_round" />
+            />
 
-        <TextView
-            android:id="@+id/informacion"
-            android:layout_width="380dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="hola"
-            android:textColor="#fff"
-            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="match_parent"
