@@ -25,6 +25,14 @@ public class GridAdapterProduct extends BaseAdapter {
     private TextView nombreGridView;
     private ImageView imageView;
 
+    private RecyclerViewOnItemMedicClickListener recyclerViewOnItemMedicClickListener;
+
+    public interface RecyclerViewOnItemMedicClickListener {
+        void onCLick(View view, int position);
+
+        void onClickCall(View view, int position);
+    }
+
     public GridAdapterProduct(Context contexto, ArrayList<GridViewImagen> datos) {
         //Se asignan los valores a los atributos de la clase AdaptadorGridView.
         this.contexto = contexto;

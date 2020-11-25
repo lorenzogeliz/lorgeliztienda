@@ -129,15 +129,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   /* //verifica si ya inicio secion para no volver a login
+    //verifica si ya inicio secion para no volver a login
     protected void onStart() {
 
         super.onStart();
         if (mAuth.getCurrentUser() != null) {
             //getUserInfo();
             //Toast.makeText(this, "No cerraste cesion la ultima ve...", Toast.LENGTH_LONG).show();
-            startActivity(new Intent(context,RegistroActivity.class));
+            startActivity(new Intent(context,contentActivity.class));
         }
-    }*/
+    }
 
 }

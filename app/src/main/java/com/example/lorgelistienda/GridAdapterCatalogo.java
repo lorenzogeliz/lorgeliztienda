@@ -19,6 +19,7 @@ public class GridAdapterCatalogo extends BaseAdapter {
     private ArrayList<GridViewImagen> vectorDatos;
     private TextView nombreGridView;
     private ImageView imageView;
+    private ImageView recortar;
 
     public GridAdapterCatalogo(Context contexto, ArrayList<GridViewImagen> datos) {
         //Se asignan los valores a los atributos de la clase AdaptadorGridView.
@@ -51,7 +52,14 @@ public class GridAdapterCatalogo extends BaseAdapter {
         nombreGridView.setText(vectorDatos.get(i).getNameGridView());
         imageView=convertView.findViewById(R.id.imagenLogo);
         imageView.setImageResource(vectorDatos.get(i).getImagenGridView());
+        recortar=convertView.findViewById(R.id.recorte);
 
+        recortar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         return convertView;
     }
 }

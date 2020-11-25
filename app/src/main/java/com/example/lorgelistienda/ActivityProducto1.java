@@ -71,28 +71,14 @@ public class ActivityProducto1 extends AppCompatActivity implements ActivityProd
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> item, View vista, int i, long id) {
-               /* if (i == 0) {
-                    Toast.makeText(ActivityProducto1.this, "este es el producto Plataformas Medianas", Toast.LENGTH_SHORT).show();
-                    //startActivity(new Intent(vista.getContext(), ActivityProducto1.class));
-                }
-                if (i == 1) {
-                    Toast.makeText(ActivityProducto1.this, "este es el producto Plataformas Altas", Toast.LENGTH_SHORT).show();
 
-                }
-                if (i == 2) {
-                    Toast.makeText(ActivityProducto1.this, "este es el producto Baletas", Toast.LENGTH_SHORT).show();
 
-                }
-                if (i == 3) {
-                    Toast.makeText(ActivityProducto1.this, "este es el producto Sandalias", Toast.LENGTH_SHORT).show();
 
-                }
-                if (i == 4) {
-                    Toast.makeText(ActivityProducto1.this, "este es el producto Tacones", Toast.LENGTH_SHORT).show();
-                }*/
             }
 
         });
+
+
 
 
     }
