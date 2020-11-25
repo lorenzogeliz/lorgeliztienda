@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFCDD2"
-    tools:context=".ActivityProducto1">
+    tools:context=".ActivityProducto3">
 
     <RelativeLayout
         android:id="@+id/barra"
@@ -50,7 +50,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="23dp"
                     android:gravity="center"
-                    android:text="Plataformas Medianas"
+                    android:text="Baletas"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -61,7 +61,7 @@
     </RelativeLayout>
 
     <GridView
-        android:id="@+id/gridviewProducto1"
+        android:id="@+id/gridviewProducto3"
         android:layout_below="@+id/barra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

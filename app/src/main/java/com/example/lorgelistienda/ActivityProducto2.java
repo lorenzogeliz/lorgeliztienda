@@ -1,33 +1,18 @@
 package com.example.lorgelistienda;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.ListResult;
-import com.google.firebase.storage.StorageReference;
-import com.squareup.picasso.MemoryPolicy;
-import com.squareup.picasso.NetworkPolicy;
-import com.squareup.picasso.Picasso;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ActivityProducto1 extends AppCompatActivity implements ActivityProductoMVP.View{
+public class ActivityProducto2 extends AppCompatActivity implements ActivityProductoMVP.View{
 
     private GridAdapterProduct adaptador;
     private GridView gridView;
@@ -47,7 +32,7 @@ public class ActivityProducto1 extends AppCompatActivity implements ActivityProd
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_producto1);
+        setContentView(R.layout.activity_producto2);
 
         /*presenter=new ActivityProductoPresenter(this);
 
@@ -63,7 +48,7 @@ public class ActivityProducto1 extends AppCompatActivity implements ActivityProd
             }
         });
 
-        gridView = (GridView) findViewById(R.id.gridviewProducto1);
+        gridView = (GridView) findViewById(R.id.gridviewProducto2);
 
         adaptador = new GridAdapterProduct(this, (ArrayList<GridViewImagen>) gridViewImagenList);
         gridView.setAdapter(adaptador);
@@ -98,18 +83,14 @@ public class ActivityProducto1 extends AppCompatActivity implements ActivityProd
     }
 
     public void getImagen(){
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.platm7));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.platm8));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.platm9));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.platm18));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.platm19));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.platm20));
-        /*gridViewImagenList.add(new GridViewImagen(" ", R.drawable.san2));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.san3));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.san4));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.san5));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.san6));
-        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.san6));*/
+
+        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.plata1));
+        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.plata2));
+        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.plata3));
+        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.plata4));
+        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.plata5));
+        gridViewImagenList.add(new GridViewImagen(" ", R.drawable.plata6));
+
 
     }
 

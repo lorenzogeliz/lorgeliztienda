@@ -55,16 +55,19 @@ private ImageView btn_atras;
                     startActivity(new Intent(vista.getContext(), ActivityProducto1.class));
                 }
                 if (i==1) {
-                    Toast.makeText(contentActivity.this, "este es el producto Plataformas Altas", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(vista.getContext(), ActivityProducto2.class));
+
 
                 }if (i==2) {
-                    Toast.makeText(contentActivity.this, "este es el producto Baletas", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(vista.getContext(), ActivityProducto3.class));
+
 
                 }if (i==3) {
-                    Toast.makeText(contentActivity.this, "este es el producto Sandalias", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(vista.getContext(), ActivityProducto4.class));
 
                 }if (i==4) {
-                    Toast.makeText(contentActivity.this, "este es el producto Tacones", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(vista.getContext(), ActivityProducto5.class));
+
                 }
             }
 

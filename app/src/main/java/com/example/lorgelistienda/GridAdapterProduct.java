@@ -21,11 +21,11 @@ import java.util.ArrayList;
 public class GridAdapterProduct extends BaseAdapter {
 
     private Context contexto;
-    private ArrayList<GridViewImagenProduct> vectorDatos;
+    private ArrayList<GridViewImagen> vectorDatos;
     private TextView nombreGridView;
     private ImageView imageView;
 
-    public GridAdapterProduct(Context contexto, ArrayList<GridViewImagenProduct> datos) {
+    public GridAdapterProduct(Context contexto, ArrayList<GridViewImagen> datos) {
         //Se asignan los valores a los atributos de la clase AdaptadorGridView.
         this.contexto = contexto;
         this.vectorDatos = datos;
@@ -54,6 +54,8 @@ public class GridAdapterProduct extends BaseAdapter {
             convertView = layout_inflater.inflate(R.layout.gridview_card_productos, null);
         }
         imageView=convertView.findViewById(R.id.imagenLogo);
+        imageView.setImageResource(vectorDatos.get(i).getImagenGridView());
+
 
        /* Picasso.with(contexto)
                 .load(vectorDatos.get(i).getImagenGridView())
@@ -61,13 +63,12 @@ public class GridAdapterProduct extends BaseAdapter {
                 .fit()
                 .centerCrop().into(imageView);*/
 
-       // imageView.setImageResource(vectorDatos.get(i).getImagenGridView());
 
-        Picasso.get().load(vectorDatos.get(i).getImagenGridView())
+        /*Picasso.get().load(vectorDatos.get(i).getImagenGridView())
                 .resize(100, 100)
                 .memoryPolicy(MemoryPolicy.NO_CACHE).networkPolicy(NetworkPolicy.NO_CACHE)
                 .error(contexto.getResources().getDrawable(R.drawable.img1))
-                .centerCrop().into(imageView);
+                .centerCrop().into(imageView);*/
 
         return convertView;
     }

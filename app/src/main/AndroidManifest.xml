@@ -15,6 +15,16 @@
         android:supportsRtl="true">
         <activity android:name=".ActivityProducto1"
             android:theme="@style/Theme.AppCompat.NoActionBar" ></activity>
+        <activity android:name=".ActivityProducto2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" ></activity>
+        <activity android:name=".ActivityProducto3"
+            android:theme="@style/Theme.AppCompat.NoActionBar" ></activity>
+
+        <activity android:name=".ActivityProducto4"
+            android:theme="@style/Theme.AppCompat.NoActionBar" ></activity>
+        <activity android:name=".ActivityProducto5"
+            android:theme="@style/Theme.AppCompat.NoActionBar" ></activity>
+
         <activity android:name=".contentActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
